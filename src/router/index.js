@@ -5,8 +5,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'app',
-      component: import('../App.vue')
+      name: 'quizes',
+      component: import('../views/QuizesView.vue')
+    },
+    {
+      path: '/quiz/:id',
+      name: 'quiz',
+      component: import('../views/QuizView.vue')
     },
    
   ]
